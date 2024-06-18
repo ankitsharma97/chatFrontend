@@ -1,0 +1,129 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.chat-container {
+  display: flex;
+  height: 100vh;
+  background-color: #002a44;
+}
+
+.sidebar {
+  flex: 0 0 30%;
+  background-color: #2c3e50;
+  color: #fff;
+  padding: 20px;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.chat-area {
+  flex: 0 0 70%;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-header {
+  background-color: #013e7c;
+  color: #fff;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chat-body {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  background-color: #f4f4f4;
+}
+
+.message {
+  margin-bottom: 20px;
+}
+
+.message-header h4 {
+  margin: 0;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ccc;
+}
+
+.message-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.sent {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+.received {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+
+.message-bubble {
+  max-width: 70%;
+  padding: 10px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+}
+
+.sent .message-bubble {
+  background-color: #5295d9;
+  color: #fff;
+  border-radius: 10px 10px 0px 10px;
+}
+
+.received .message-bubble {
+  background-color: #f4dddd;
+  border-radius: 10px 10px 10px 0;
+}
+
+.chat-footer {
+  background-color: #2c3e50;
+  margin-top: 2px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.message-input {
+  display: flex;
+  width: 100%;
+}
+
+.message-input input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  resize: none;
+}
+
+.message-input button {
+  width: 15%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #5295d9;
+  color: #fff;
+  cursor: pointer;
+}
+
+.message-input button:hover {
+  background-color: #407ab7;
+}
+
+.active-user {
+  background-color: #007bff;
+  color: white;
+}
